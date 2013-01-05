@@ -1,0 +1,59 @@
+#rTab{}
+
+#rTabHead{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+}
+
+#rTabHead li{
+	float: left;
+	margin: 0 0.2em -5px 0.2em;
+	padding: 0.2em 1em;
+	background-color: #9EC630;
+	border: thin solid gray;
+	border-bottom: none;
+	-moz-border-top-left-radius: 0.4em;
+   -webkit-border-top-left-radius: 0.4em;
+   -khtml-border-top-left-radius: 0.4em;
+   border-top-left-radius: 0.4em;
+	-moz-border-top-right-radius: 0.4em;
+   -webkit-border-top-right-radius: 0.4em;
+   -khtml-border-top-right-radius: 0.4em;
+   border-top-right-radius: 0.4em;	
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+	color: #9EC630
+}
+
+#rTabHead li:hover a{
+	color: #9EC630
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #90B4CF;
+	border: thin solid gray;
+	border-bottom: none;	
+}
+
+#rTabHead li.rTabActiveHead a{
+	color: gray;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+	color: #ffc;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid gray;
+	padding: 1em;
+	background-color: #ffc;
+	-moz-border-radius: 0.4em;
+   -webkit-border-radius: 0.4em;
+   -khtml-border-radius: 0.4em;
+	border-radius: 0.4em;
+}

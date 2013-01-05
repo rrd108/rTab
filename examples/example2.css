@@ -1,0 +1,46 @@
+#rTab{}
+
+#rTabHead{
+	list-style-type: none;
+	float: right;
+	margin: 0;
+}
+
+#rTabHead li{
+	float: left;
+	margin: 0 0.2em -2px 0.2em;
+	padding: 0.2em 1em;
+	background-color: #dfd8d1;
+	border: thin solid gray;
+	border-bottom: none;
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #ffefdf;
+	border: thin solid red;
+	border-bottom: none;	
+}
+
+#rTabHead li.rTabActiveHead a{
+	color: red;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+	color: #aac;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid red;
+	padding: 1em;
+	background-color: #ffefdf;
+}
+
+pre{
+	background-color: #a8cfcb;
+}
