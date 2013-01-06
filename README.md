@@ -7,4 +7,4 @@ There are several tab solutions for other Javascript frameworks and now, here is
 
 #### Working examples
 
-Working examples could be found here http://webmania.cc/static/rTab/rTab.html
+Working examples could be found here http://rrd108.github.com/rTab
