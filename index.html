@@ -2,66 +2,67 @@
 <html>
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="rTab : Simple Tab Navigation." />
+	 <meta charset='utf-8' />
+	 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	 <meta name="description" content="rTab : Simple Tab Navigation." />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="https://raw.github.com/rrd108/rTab/masterr/Tab.css" media="screen">
-    <script type="text/javascript" src="https://raw.github.com/rrd108/rTab/master/lib/prototype.js"></script>
-	  <script type="text/javascript" src="https://raw.github.com/rrd108/rTab/master/rTab.js"></script>
+	 <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	 <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/rTab.css">
+	 <script type="text/javascript" src="https://raw.github.com/rrd108/rTab/master/lib/prototype.js"></script>
+	 <script type="text/javascript" src="https://raw.github.com/rrd108/rTab/master/rTab.js"></script>
 
-    <title>rTab</title>
+	 <title>rTab</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/rrd108/rTab">View on GitHub</a>
+	 <!-- HEADER -->
+	 <div id="header_wrap" class="outer">
+		  <header class="inner">
+			 <a id="forkme_banner" href="https://github.com/rrd108/rTab">View on GitHub</a>
 
-          <h2 id="project_tagline">Simple Tab Navigation.</h2>
+			 <h2 id="project_tagline">rTab - Simple Tab Navigation.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/rrd108/rTab/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/rrd108/rTab/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+				<section id="downloads">
+				  <a class="zip_download_link" href="https://github.com/rrd108/rTab/zipball/master">Download this project as a .zip file</a>
+				  <a class="tar_download_link" href="https://github.com/rrd108/rTab/tarball/master">Download this project as a tar.gz file</a>
+				</section>
+		  </header>
+	 </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="rTab">
-      <nav>
-      <ul id="rTabHead">
-      	<li><a href="#">What</a></li>
-    		<li><a href="#">HTML</a></li>
-    		<li><a href="#">CSS</a></li>
-		  	<li><a href="#">How to use</a></li>
-			  <li><a href="#">Examples</a></li>
-  			<li><a href="#">License</a></li>
-    	</ul>
-      </nav>
-      
-    	<div id="rTabContent">
-    		<div>
-          <h1 id="project_title">rTab</h1>
-          
-          <div id="main_content_wrap" class="outer">
-            <section id="main_content" class="inner">
-              <h1>rTab</h1>
-              
-              <h4>A Simple Web Application Tab Navigation Based on Prototype.js</h4>
-      
-              <p>There are several tab solutions for other Javascript frameworks and now, here is one for my favourite Prototype.js</p>
-      
-            </section>
-          </div>   
-    		</div>
-    		  		<div>
+	 <!-- MAIN CONTENT -->
+	 <div id="rTab">
+		<nav>
+		<ul id="rTabHead">
+			<li><a href="#">What</a></li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">How to use</a></li>
+			<li><a href="#">Examples</a></li>
+			<li><a href="#">License</a></li>
+		</ul>
+		</nav>
+		
+		<div id="rTabContent">
+			<div>
+			 <h1>What is rTab</h1>
+			 <div id="main_content_wrap" class="outer">
+				<section id="main_content" class="inner">
+				  
+				  <h4>A Simple Web Application Tab Navigation Based on Prototype.js</h4>
+		
+				  <p>There are several tab solutions for other Javascript frameworks and now, here is one for my favourite Prototype.js</p>
+		
+				</section>
+			 </div>   
+			</div>
+		   <div>
 				<h1>HTML code</h1>
-				<p>You should use the following HTML structure to get it work.</p>
-				<pre>
+				
+				<div id="main_content_wrap" class="outer">
+				  <section id="main_content" class="inner">
+					 <p>You should use the following HTML structure to get it work.</p>
+					 <pre>
 
 &lt;div id="rTab"&gt;
 	&lt;ul id="rTabHead"&gt;
@@ -73,18 +74,23 @@
 		&lt;div&gt;Content for tab #2&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-				</pre>
-				<p>You could add as much tabs as you want by adding new `li` elements for the
-				"rTabHead" `ul` list, and same number of new `div`-s to "rTabContent" `div`.</p>
-				<p>In tab contents all valid HTML code could be used.</p>
-				<p>You could change the order of "rTabHead" and "rTabContent" in your HTML code if you want.</p>
+					 </pre>
+					 <p>You could add as much tabs as you want by adding new `li` elements for the
+					 "rTabHead" `ul` list, and same number of new `div`-s to "rTabContent" `div`.</p>
+					 <p>In tab contents all valid HTML code could be used.</p>
+					 <p>You could change the order of "rTabHead" and "rTabContent" in your HTML code if you want.</p>
+				</section>
+			 </div>   
 			</div>
 			<div>
 				<h1>CSS</h1>
-				<p>No CSS required for the package, it will work without any CSS rules.</p>
-				<p>Perhaps if you want to have something which looks nicely, you should use
-				something like we used for this example page.</p>
-				<pre>
+				
+				<div id="main_content_wrap" class="outer">
+				  <section id="main_content" class="inner">
+					 <p>No CSS required for the package, it will work without any CSS rules.</p>
+					 <p>Perhaps if you want to have something which looks nicely, you should use
+					 something like we used for this example page.</p>
+					 <pre>
 
 #rTabHead{
 	list-style-type: none;
@@ -117,56 +123,73 @@
 	padding: 1em;
 	background-color: #ffefdf;
 }
-				</pre>
+	 				</pre>
+				</section>
+			 </div>   
 			</div>
 			<div>
 				<h1>How to use</h1>
-				<p>You should add prototype.js and rTab.js to your HTML header.
-				<pre>
+				
+				<div id="main_content_wrap" class="outer">
+              <section id="main_content" class="inner">
+					 <p>You should add prototype.js and rTab.js to your HTML header.
+					 <pre>
 
 &lt;script type="text/javascript" src="lib/prototype.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="rTab.js"&gt;&lt;/script&gt;
-				</pre>
-				</p>
-				<p>You should have the HTML code suggested in the HTML tab.</p>
-				<p>The package will use the first tab as the active tab on start. If you want to
-				use an other tab then go to the last line of `rTab.js` and change `rTab.init();` to
-				`rTab.init(2);` for starting with tab 3. Do not forget, indexes starts at 0 not 1,
-				so if you want to start with your 3rd tab you should add 2 as the index number.
-				<pre>
+					 </pre>
+					 </p>
+					 <p>You should have the HTML code suggested in the HTML tab.</p>
+					 <p>The package will use the first tab as the active tab on start. If you want to
+					 use an other tab then go to the last line of `rTab.js` and change `rTab.init();` to
+					 `rTab.init(2);` for starting with tab 3. Do not forget, indexes starts at 0 not 1,
+					 so if you want to start with your 3rd tab you should add 2 as the index number.
+					 <pre>
 
 document.observe('dom:loaded', function(){
 	rTab.init(2);	//show tab #3 on start
 });
-				</pre>
-				</p>
+					 </pre>
+					 </p>
+				</section>
+			 </div>   
 			</div>
 			<div>
 				<h1>Examples</h1>
-				<ol>
-					<li>This page itself could be used as Example #1</li>
-					<li>Different tab header position and bordering <a href="examples/example2.html">Example #2</a></li>
-					<li>Switched order of rTabHead and rTabContent in HTML <a href="examples/example3.html">Example #3</a></li>
-					<li>Start with 3rd tab <a href="examples/example4.html">Example #4</a></li>
-				</ol>
+				
+				<div id="main_content_wrap" class="outer">
+				  <section id="main_content" class="inner">
+					 <ol>
+						 <li>This page itself could be used as Example #1</li>
+						 <li>Different tab header position and bordering <a href="examples/example2.html">Example #2</a></li>
+						 <li>Switched order of rTabHead and rTabContent in HTML <a href="examples/example3.html">Example #3</a></li>
+						 <li>Start with 3rd tab <a href="examples/example4.html">Example #4</a></li>
+					 </ol>
+				</section>
+			 </div>   
 			</div>
 			<div>
 				<h1>License</h1>
-				<p>This package is freely distributable under the terms of an MIT-style license.</p>
+				
+				<div id="main_content_wrap" class="outer">
+				  <section id="main_content" class="inner">
+	 				<p>This package is freely distributable under the terms of an MIT-style license.</p>
+				</section>
+			 </div>   
 			</div>
 
-    	</div>
+		</div>
 </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Rtab maintained by <a href="https://github.com/rrd108">rrd108</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+	 <!-- FOOTER  -->
+	 <div id="footer_wrap" class="outer">
+		<footer class="inner">
+		  <p class="copyright">Rtab maintained by <a href="https://github.com/rrd108">rrd108</a></p>
+		  <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	 </div>
 
-    
+	 
 
   </body>
 </html>

@@ -1,0 +1,44 @@
+#rTab{}
+
+#rTabHead{
+}
+
+#rTabHead li{
+	list-style-type: none;
+	float: left;
+	margin: 0 0.2em;
+	padding: 0.2em 1em;
+	background-color: #fff;
+	border: thin solid gray;
+	border-bottom: none;
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #007EDF;
+}
+
+#rTabHead li.rTabActiveHead a{
+   color: #fff;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid gray;
+	padding: 1em;
+}
+
+h1{
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+}
