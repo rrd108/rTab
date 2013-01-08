@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>-=- rTab -=-</title>
+	<link rel="stylesheet" type="text/css" href="rTab.css" media="screen">
+	<script type="text/javascript" src="lib/prototype.js"></script>
+	<script type="text/javascript" src="rTab.js"></script>
+</head>
+<body>
+	<a href="rTab-hu.html">Magyarul</a>
+	<div id="rTab">
+		<nav>
+		<ul id="rTabHead">
+			<li><a href="#">What?</a></li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">How to use</a></li>
+			<li><a href="#">Examples</a></li>
+			<li><a href="#">License</a></li>
+			<li><a href="#">Project</a></li>
+		</ul>
+		</nav>
+		
+		<div id="rTabContent">
+			<div>
+				<h1>What is this?</h1>
+				<p>There are several tab solutions for other Javascript frameworks and now,
+				here is one for my favourite Prototype.js</p>
+				<p>Using is really simple and it could be integrated to any web applications.</p>
+				<p>Please use the tabs at the top of this page for instructions.</p>
+			</div>
+			<div>
+				<h1>HTML code</h1>
+				<p>You should use the following HTML structure to get it work.</p>
+				<pre>
+
+&lt;div id="rTab"&gt;
+	&lt;ul id="rTabHead"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tab #1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Tab #2&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div id="rTabContent"&gt;
+		&lt;div&gt;Content for tab #1&lt;/div&gt;
+		&lt;div&gt;Content for tab #2&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre>
+				<p>You could add as much tabs as you want by adding new `li` elements for the
+				"rTabHead" `ul` list, and same number of new `div`-s to "rTabContent" `div`.</p>
+				<p>In tab contents all valid HTML code could be used.</p>
+				<p>You could change the order of "rTabHead" and "rTabContent" in your HTML code if you want.</p>
+			</div>
+			<div>
+				<h1>CSS</h1>
+				<p>No CSS required for the package, it will work without any CSS rules.</p>
+				<p>Perhaps if you want to have something which looks nicely, you should use
+				something like we used for this example page.</p>
+				<pre>
+
+#rTabHead{
+	list-style-type: none;
+}
+
+#rTabHead li{
+	float: left;
+	margin: 0 0.2em -2px 0.2em;
+	padding: 0.2em 1em;
+	background-color: #dfd8d1;
+	border: thin solid gray;
+	border-bottom: none;
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #ffefdf;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid gray;
+	padding: 1em;
+	background-color: #ffefdf;
+}
+				</pre>
+			</div>
+			<div>
+				<h1>How to use</h1>
+				<p>You should add prototype.js and rTab.js to your HTML header.
+				<pre>
+
+&lt;script type="text/javascript" src="lib/prototype.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="rTab.js"&gt;&lt;/script&gt;
+				</pre>
+				</p>
+				<p>You should have the HTML code suggested in the HTML tab.</p>
+				<p>The package will use the first tab as the active tab on start. If you want to
+				use an other tab then go to the last line of `rTab.js` and change `rTab.init();` to
+				`rTab.init(2);` for starting with tab 3. Do not forget, indexes starts at 0 not 1,
+				so if you want to start with your 3rd tab you should add 2 as the index number.
+				<pre>
+
+document.observe('dom:loaded', function(){
+	rTab.init(2);	//show tab #3 on start
+});
+				</pre>
+				</p>
+			</div>
+			<div>
+				<h1>Examples</h1>
+				<ol>
+					<li>This page itself could be used as Example #1</li>
+					<li>Different tab header position and bordering <a href="examples/example2.html">Example #2</a></li>
+					<li>Switched order of rTabHead and rTabContent in HTML <a href="examples/example3.html">Example #3</a></li>
+					<li>Start with 3rd tab <a href="examples/example4.html">Example #4</a></li>
+				</ol>
+			</div>
+			<div>
+				<h1>License</h1>
+				<p>This package is freely distributable under the terms of an MIT-style license.</p>
+			</div>
+			<div>
+				<h1>Project page</h1>
+				<p>The project hosted on <a href="https://github.com/rrd108/rTab">GitHub</a>.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

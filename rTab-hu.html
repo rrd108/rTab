@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>-=- rTab -=-</title>
+	<link rel="stylesheet" type="text/css" href="rTab.css" media="screen">
+	<script type="text/javascript" src="lib/prototype.js"></script>
+	<script type="text/javascript" src="rTab.js"></script>
+</head>
+<body>
+	<a href="rTab.html">English</a>
+	<div id="rTab">
+		<nav>
+		<ul id="rTabHead">
+			<li><a href="#">Mi ez?</a></li>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">Használat</a></li>
+			<li><a href="#">Példák</a></li>
+			<li><a href="#">Licensz</a></li>
+			<li><a href="#">Projekt</a></li>
+		</ul>
+		</nav>
+		
+		<div id="rTabContent">
+			<div>
+				<h1>Mi ez?</h1>
+				<p>Sokféle tab kezelő megoldás létezik más Javascript keretrendszerekhez,
+				és most itt van egy a kedvencemhez, a Prototype-hoz</p>
+				<p>A csomag használata egyszerű és tetszőleges webalkalmazásba integrálható.</p>
+				<p>Használd a tabokat a lap tetején a további infókért.</p>
+			</div>
+			<div>
+				<h1>HTML kód</h1>
+				<p>A következő HTML felépítést kell használnod.</p>
+				<pre>
+
+&lt;div id="rTab"&gt;
+	&lt;ul id="rTabHead"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;1. Tab&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;2. Tab&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div id="rTabContent"&gt;
+		&lt;div&gt;Az első tab tartalma&lt;/div&gt;
+		&lt;div&gt;a második tab tartalma&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre>
+				<p>Tetszőleges számú új tabot addhatsz hpzzá. Ehhez adj hozzá új `li` elemeket
+				az "rTabHead" `ul` listához, és ugyanennyi új `div`-et a "rTabContent" `div`-hez.</p>
+				<p>Magukban a tabokban bármilyen érvényes HTML kódot használhatsz.</p>
+				<p>Felcserélheted az "rTabHead" és az "rTabContent" részt a HTML kódodban ha az
+				jobban megfelel az igényeidnek.</p>
+			</div>
+			<div>
+				<h1>CSS</h1>
+				<p>Semmiféle CSS nem szükséges a csomaghoz, működni fog mindenféle CSS szabály nélkül
+				is.</p>
+				<p>Persze ha csinosítani akarsz a kinézeten akkor használnod kell valamiféle CSS
+				formázást ahogyan azt itt is láthatod.</p>
+				<pre>
+
+#rTabHead{
+	list-style-type: none;
+}
+
+#rTabHead li{
+	float: left;
+	margin: 0 0.2em -2px 0.2em;
+	padding: 0.2em 1em;
+	background-color: #dfd8d1;
+	border: thin solid gray;
+	border-bottom: none;
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #ffefdf;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid gray;
+	padding: 1em;
+	background-color: #ffefdf;
+}
+				</pre>
+			</div>
+			<div>
+				<h1>Hogyan használjam?</h1>
+				<p>Linkeld be a prototype.js és a rTab.js fileokat a HTML dokumentumod header részében.
+				<pre>
+
+&lt;script type="text/javascript" src="lib/prototype.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="rTab.js"&gt;&lt;/script&gt;
+				</pre>
+				</p>
+				<p>Ezután hozd létre azt a HTML vázat amit a HTML tab mutat.</p>
+				<p>Alap beállítás szerint az első tab lesz az aktív. Ha másik tabot szeretnél megjeleníteni
+				induláskor akkor keresd meg az `rTab.js` file utolsó sorait és a `rTab.init();` sort
+				cseréld ki `rTab.init(2);`-re. Így induláskor a harmadik tab fog megjelenni.
+				Ne felejts el, hogy az indexelés 0-tól indul nem 1-től, így ha a harmadik tabot
+				akarod látni induláskor akkor 2-t kell megadnod indexnek.
+				<pre>
+
+document.observe('dom:loaded', function(){
+	rTab.init(2);	//a 3. tabot mutassa induláskor
+});
+				</pre>
+				</p>
+			</div>
+			<div>
+				<h1>Példák</h1>
+				<ol>
+					<li>Ez az oldal maga használható mint az 1. példa</li>
+					<li>A tabokat áthelyeztük és a kereteket átalakítottuk a  <a href="examples/example2.html">2. példában</a></li>
+					<li>A HTML dokumentiumban felcseréltük az rTabHead és az rTabContent elemeket a <a href="examples/example3.html">3. példában</a></li>
+					<li>A 3. tabot nyitjuk meg induláskor a <a href="examples/example4.html">4. példában</a></li>
+				</ol>
+			</div>
+			<div>
+				<h1>Licensz</h1>
+				<p>A csomag a MIT licensz szerint használható.</p>
+			</div>
+			<div>
+				<h1>Projekt oldal</h1>
+				<p>A projekt a <a href="https://github.com/rrd108/rTab">GitHub</a>on csücsül.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

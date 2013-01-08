@@ -1,0 +1,37 @@
+#rTab{}
+
+#rTabHead{
+	list-style-type: none;
+}
+
+#rTabHead li{
+	float: left;
+	margin: 0 0.2em -2px 0.2em;
+	padding: 0.2em 1em;
+	background-color: #dfd8d1;
+	border: thin solid gray;
+	border-bottom: none;
+}
+
+#rTabHead li:hover{
+	background-color: #eed;
+}
+
+#rTabHead li.rTabActiveHead{
+	background-color: #ffefdf;
+}
+
+#rTabHead li a{
+	text-decoration: none;
+}
+
+#rTabContent{
+	clear: both;
+	border: thin solid gray;
+	padding: 1em;
+	background-color: #ffefdf;
+}
+
+pre{
+	background-color: #a8cfcb;
+}
